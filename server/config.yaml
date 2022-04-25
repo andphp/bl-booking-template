@@ -1,0 +1,38 @@
+jwt:
+  buffer-time: 86400   #缓冲时间1天
+  expires-time: 604800 #7天
+  issuer: qmPlus
+  signing-key: 48352fb4-2097-49d6-a9a3-85fad5c5fc1f
+local:
+  path: uploads/file
+mysql:
+  path: 124.71.39.135:33006
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  db-name: go-go
+  username: root
+  password: "123456"  #密码
+  max-idle-conns: 0
+  max-open-conns: 0
+  max-lifetime: 10
+  log-mode: ""
+  log-zap: false
+redis:
+  db: 0
+  addr: 127.0.0.1:6379
+  password: ""
+system:
+  env: public  # "develop"
+  addr: 8888
+  oss-type: local
+  use-multipoint: false  #多点登录拦截
+  iplimit-count: 15000
+  iplimit-time: 3600
+zap:
+  level: info
+  format: console
+  prefix: '[server]'
+  director: log
+  showLine: true
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  log-in-console: true

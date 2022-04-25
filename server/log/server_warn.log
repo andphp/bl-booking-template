@@ -1,0 +1,3 @@
+[server]2022/04/18 - 17:09:02.061	[33mwarn[0m	F:/project/server/controller/unauthority/test.go:15	testsss	{"testszap": "testszap"}
+[server]2022/04/18 - 17:27:41.500	[33mwarn[0m	F:/project/server/controller/unauthority/test.go:15	testsss	{"testszap": "testszap", "testszap1": "testszap1"}
+[server]2022/04/19 - 09:06:08.735	[33mwarn[0m	F:/project/server/controller/unauthority/test.go:15	testsss	{"testszap": "testszap", "testszap1": "testszap1"}
