@@ -7,20 +7,16 @@ import (
 
 	"github.com/andphp/go-gin/goby/translator"
 	"github.com/andphp/go-gin/goby/utils"
-	"github.com/spf13/viper"
-	"go.uber.org/zap"
 	"golang.org/x/sync/singleflight"
 )
 
 var (
-	GLOBAL_VIPER               *viper.Viper
-	GLOBAL_LOG                 *zap.Logger
 	GLOBAL_Concurrency_Control = &singleflight.Group{}
 )
 
 func InitConfig() {
-	GLOBAL_VIPER = utils.Viper() // 初始化Viper
-	GLOBAL_LOG = utils.Zap()
+	utils.Viper() // 初始化Viper
+	utils.Zap()
 
 	err := os.Setenv("GIN_MODE", "release")
 	if err != nil {
