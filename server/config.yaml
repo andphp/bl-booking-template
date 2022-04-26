@@ -6,7 +6,7 @@ jwt:
 local:
   path: uploads/file
 mysql:
-  path: 124.71.39.135:33006
+  path: 127.0.0.1:33006
   config: charset=utf8mb4&parseTime=True&loc=Local
   db-name: go-go
   username: root
@@ -20,13 +20,6 @@ redis:
   db: 0
   addr: 127.0.0.1:6379
   password: ""
-system:
-  env: public  # "develop"
-  addr: 8888
-  oss-type: local
-  use-multipoint: false  #多点登录拦截
-  iplimit-count: 15000
-  iplimit-time: 3600
 zap:
   level: info
   format: console
