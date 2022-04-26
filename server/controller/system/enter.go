@@ -1,6 +1,5 @@
-package unauthority
+package system
 
-type WhiteListGroup struct {
-	Test
-	Sign
+type Group struct {
+	Menu
 }

@@ -20,7 +20,7 @@ func main() {
 
 	boot.GormBoot()
 
-	ainRouter := goby.MakeGin().RouterMount("")(router.Admin)
+	ainRouter := goby.MakeGin().RouterMount("")(router.Admin).RouterMount("")(router.Menu)
 
 	s := &http.Server{
 		Addr:           ":8081",
